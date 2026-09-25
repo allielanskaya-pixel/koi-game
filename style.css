@@ -69,8 +69,8 @@ html, body {
 @media (min-width: 768px) {
   #zen-app {
     max-width: 1024px;
-    height: 96vh;
-    margin: 2vh auto;
+    height: 100%;
+    margin: 0 auto;
     border-radius: var(--r-lg);
     border: 1px solid rgba(0, 240, 255, 0.22);
     box-shadow: 0 0 70px rgba(0, 0, 0, 0.95), 0 0 25px rgba(0, 240, 255, 0.12);
@@ -94,10 +94,7 @@ html, body {
 
 /* Безопасный отступ под мобильный стики-баннер Яндекс Игр (п. 1.10.1) */
 .yandex-ad-safe-spacer {
-  width: 100%;
-  height: clamp(50px, 7vh, 65px);
-  flex-shrink: 0;
-  pointer-events: none;
+  display: none !important;
 }
 
 /* 0. ЭКРАН ЗАГРУЗКИ */
